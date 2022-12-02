@@ -6,6 +6,11 @@ WORKDIR /src
 
 
 RUN ls -al
+RUN chmod 555 gradlew
+RUN ls -al
+
+
+
 RUN sh -c "./gradlew build --stacktrace"
 
 
