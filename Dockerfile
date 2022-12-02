@@ -4,8 +4,10 @@ EXPOSE 8080
 COPY . /src
 WORKDIR /src
 
+
 RUN ls -al
-RUN ./gradlew build --stacktrace
+RUN sh -c "./gradlew build --stacktrace"
+
 
 
 FROM openjdk:17-oracle
