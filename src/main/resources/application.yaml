@@ -5,7 +5,7 @@ logging:
         security: DEBUG
 spring:
   datasource:
-    url: bdd-1ljdpn:5432
+    url: jdbc:postgresql://bdd-1ljdpn:5432/BDD
     username: posgres-user
     password: password
   jpa:
